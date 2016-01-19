@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>Discuss App - Chat Room</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/room-style.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header class="banner">
+
+    <h1 class="bannertext">
+        People are discussing on NodeJs
+    </h1>
+
+</header>
+
+
+<section class="section">
+
+    <!-- These elements are displayed as white info cards in the middle of the screen -->
+
+    <div class="connected">
+
+        <img src="../img/unnamed.jpg" id="creatorImage"/>
+
+        <div class="infoConnected">
+            <h2>Who are you?</h2>
+            <br/>
+
+            <form class="loginForm">
+                <input type="text" id="yourName" placeholder="Your nick name"/><br/>
+                <input type="text" id="yourEmail" placeholder="Your email address"/><br/>
+                <input type="submit" id="yourEnter" value="ENTER"/>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="personinside">
+
+        <img src="../img/unnamed.jpg" id="ownerImage"/>
+
+        <div class="infoInside">
+            <h2>Chat with <span class="nickname-chat"></span></h2>
+            <br/>
+
+            <form class="loginForm">
+                <input type="text" id="hisName" placeholder="Your nick name"/><br/>
+                <input type="text" id="hisEmail" placeholder="Your email address"/><br/>
+                <input type="submit" id="hisEnter" value="CHAT"/>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="invite-textfield">
+
+        <h2>Oops, there are no other people in this chat!</h2>
+        <h5>Invite a friend by sending them this URL</h5>
+
+        <div class="link">
+            <a title="Invite a friend" href="" id="link"></a>
+        </div>
+
+    </div>
+
+    <div class="left">
+
+        <img src="../img/unnamed.jpg" id="leftImage"/>
+
+        <div class="info">
+            <h2><span class="nickname-left"></span> has left this chat.</h2>
+            <h5>Invite somebody else by sending them this page.</h5>
+        </div>
+
+    </div>
+
+    <div class="toomanypeople">
+
+        <h2>Oops, you can not join this chat!</h2>
+        <h5>There are already two people in it. Would you like to create a <a title="New Room" href="/create" id="room">new
+            room</a>?</h5>
+
+    </div>
+
+    <div class="nomessages">
+
+        <img src="../img/unnamed.jpg" id="noMessagesImage"/>
+
+        <div class="info">
+            <h2>You are chatting with <span class="nickname-chat"></span>.</h2>
+            <h5>Send them a message from the form below!</h5>
+        </div>
+
+    </div>
+
+    <div class="chatscreen" style="display: block;">
+
+        <ul class="chats">
+            <li class="me">
+                <div class="image"><img
+                        src="http://www.gravatar.com/avatar/37fc26b2852a7daa5719281ae7e7061f?s=140&amp;r=x&amp;d=mm"><b>asdasd11</b><i
+                        class="timesent" data-time="1453197059549">a few seconds ago</i></div>
+                <p>asdasd</p></li>
+            <li class="me">
+                <div class="image"><img
+                        src="http://www.gravatar.com/avatar/37fc26b2852a7daa5719281ae7e7061f?s=140&amp;r=x&amp;d=mm"><b>asdasd11</b><i
+                        class="timesent" data-time="1453197062286">a few seconds ago</i></div>
+                <p>asdasda</p></li>
+            <li class="me">
+                <div class="image"><img
+                        src="http://www.gravatar.com/avatar/37fc26b2852a7daa5719281ae7e7061f?s=140&amp;r=x&amp;d=mm"><b>asdasd11</b><i
+                        class="timesent" data-time="1453197064571">a few seconds ago</i></div>
+                <p>asdasd</p></li>
+        </ul>
+
+    </div>
+
+</section>
+
+<footer style="display: block">
+    <form id="chatform">
+        <textarea id="message" placeholder="Write something.."></textarea>
+        <input class="submit" type="button" value="SEND"/>
+    </form>
+</footer>
+</body>
+
+</html>
