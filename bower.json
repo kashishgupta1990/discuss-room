@@ -1,0 +1,21 @@
+{
+  "name": "discuss",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Kashish Gupta <kashishgupta1990@yahoo.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#~2.1.8"
+  }
+}
