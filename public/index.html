@@ -5,6 +5,24 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/semantic/dist/semantic.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var init = function(){
+                window.FB = {
+                    login:function(){
+                        
+                    }
+                };
+                
+                window.FB.init({
+                    appId      : '1542683939380197',
+                    xfbml      : true,
+                    version    : 'v2.5'
+                });
+            };
+            init();
+        });
+    </script>
 </head>
 <body>
 <br>
@@ -17,10 +35,11 @@
     <div class="ui text container">
         <div class="ui segments align-center">
             <div class="ui segment">
-                <button class="ui facebook button">
-                    <i class="facebook icon"></i>
-                    Facebook
-                </button>
+                    <a href="https://www.facebook.com/dialog/oauth?client_id=1542683939380197&display=popup&response_type=token&redirect_uri=http://PT-MAC-46.local:3000/api/auth/facebook/callback">
+                        <button class="ui facebook button">
+                            <i class="facebook icon"></i> Facebook
+                        </button>
+                    </a>
             </div>
         </div>
     </div>
